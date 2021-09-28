@@ -3,9 +3,145 @@
 @import 'reset';
 @import 'libs';
 @import 'global';
+@import 'top';
 
 .header{
+    background-color: #FAF5F2;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    
+    
     &__inner{
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 113px;
+    }
+    &__logo-desc{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    &__work-time{
+        padding-left: 33px;
+        position: relative;
+        &:before{
+            content: '';
+            position: absolute;
+            background-image: url(../images/clock.svg);
+            width: 27px;
+            height: 27px;
+            left: 0;
+            top: -4px;
+        }
+    }
+    &__tel{
+        text-decoration: none;
+        color: #303030;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px; 
+    }
+    &__btn{
+        padding: 5px 26px 6px;
+    }
+    
+    
+}
+.logo{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.menu{
+
+    &__list{
+        display: flex;
+    }
+    &__list-link{                       
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-decoration: none;
+        color: #303030; 
+        &:hover{
+         color: #b44f15;
+        }
+    }
+
+    &__list-item + .menu__list-item{
+        margin-left: 75px;
+    }   
+}
+
+
+.btn{
+    background: #D5B19B;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 300;
+    color: #fff;
+    cursor: pointer;
+    transition: all .2s linear;
+    &:hover{
+        background-color: #aa866f;
     }
 }
+.title__main{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+}
+
+.footer{
+    padding: 20px 0 20px;
+    background-color: #FAF5F2;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+    }
+    &__tel{
+            font-family: 'Oswald', sans-serif;
+            text-decoration: none;
+            color: #303030;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 20px;
+            display: inline-block; 
+            margin-bottom: 8px;       
+    }
+    &__policy{                  
+        text-align: center;                   
+    }
+    &__policy-link{
+        display: inline-block;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        text-transform: uppercase;        
+        border-bottom: 1px solid #303030;
+        color: #303030;     
+    }
+    &__logo-desc{
+        margin-top: 21px;
+    }
+    &__btn{
+        padding: 5px 26px 6px;
+    }
+    &__contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;        
+    }
+     
+}
+

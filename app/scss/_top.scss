@@ -1,0 +1,40 @@
+.top{
+    margin-top: 110px;
+    padding-top: 119px;
+    &__inner{
+        width: 594px;
+    }
+    &__title{
+        margin-bottom: 10px;
+    }
+    &__desc{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 33px;
+    }
+    &__items{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90px;       
+    }
+    &__img{
+        display: block;
+        margin: 0 auto;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 12px;
+    }
+   
+    &__item-info{
+        text-align: center;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
